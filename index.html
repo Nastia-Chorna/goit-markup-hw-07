@@ -16,29 +16,31 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <!-- Шапка сайту -->
+    <header class="site-header">
         <div class="container">
-        <!--upper part of site-->
-        <a class="studio-link" href="./index.html"><span>Web</span>Studio</a>  
-        <nav class="navigation" >
-            <ul class="options">
-                <li class="header-link">
-                    <a class="link link-current" style="color: #2196F3" href="./index.html">Студия</a>
+      <!-- Логотип -->
+        <a class="logo" href="./index.html"><span>Web</span>Studio</a>  
+        <!-- Навигація -->
+        <nav class="site-header__nav" >
+            <ul class="site-nav">
+                <li class="site-nav__item">
+                    <a class="site-nav__link site-nav__link--current" style="color: #2196F3" href="./index.html">Студия</a>
                 </li>
-                <li class="header-link">
-                    <a class="link" href="./portfolio.html">Портфолио</a>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="header-link">
-                    <a class="link" href="">Контакты</a>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="">Контакты</a>
                 </li>
             </ul>
         </nav>
-    <!--h2-->
-        <ul class="email phone">
-            <li class="our-contacts">
+    <!-- Контакти в шапці -->
+        <ul class="header-contacts">
+            <li class="header-contacts__item">
                
             
-            <a class="header-link mail" href="mail:info@devstudio"> <svg class="icon-contact">
+            <a class="link header-contacts__link" href="mail:info@devstudio"> <svg class="header-contacts__icon">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg> info@devstudio</a>
 
@@ -46,7 +48,7 @@
             <li class="our-contacts">
                 
                 
-                <a class="header-link telephone" href="tel:+380961111111"> <svg class="icon-contact-phone">
+                <a class="link header-contacts__link" href="tel:+380961111111"> <svg class="header-contacts__icon">
                     <use href="./images/symbol-defs.svg#icon-Vector"></use>
                 </svg> +380961111111</a>
 
@@ -56,14 +58,15 @@
       </div>
     </header>
 
+     <!-- Основний контент -->
     <main>
-        <!--first section-->
-        <section class="main-title">
-            <div class="box">
+        <!-- Герой -->
+        <section class="hero">
+            <div class="conteiner hero__conteiner">
             <h1> Эффективные решения <br/> для вашего бизнеса</h1>
         </div>
              
-        <button data-modal-open class="button-first" type="button">Заказать услугу</button>
+        <button data-modal-open class="btn-hero" type="button">Заказать услугу</button>
 
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
@@ -125,31 +128,31 @@
             </div>
         </section>
 
-        <!--description section-->
-        <section class="details-section">
+        <!--Особливості-->
+        <section class="feature">
 
         <div class="container-details">
 
-            <ul class="descript">
+            <ul class="feature__list">
                 <li>
-                    <div class="box-one"></div>
-                    <h3 class="small-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                    <p class="description">Идейные соображения, а также <br/> начало повседневной работы по <br/> формированию позиции.</p>
+                    <div class="feature__item feature__item--details"></div>
+                    <h3 class="feature__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                    <p>Идейные соображения, а также <br/> начало повседневной работы по <br/> формированию позиции.</p>
                 </li>
                 <li>
-                    <div class="box-two"></div>
-                    <h3 class="small-title">ПУНКТУАЛЬНОСТЬ</h3>
-                    <p class="description">Задача организации, в особенности <br/> же рамки и место обучения кадров <br/> влечет за собой.</p>
+                    <div class="feature__item feature__item--clock"></div>
+                    <h3 class="feature__title">ПУНКТУАЛЬНОСТЬ</h3>
+                    <p>Задача организации, в особенности <br/> же рамки и место обучения кадров <br/> влечет за собой.</p>
                 </li>
                 <li>
-                    <div class="box-three"></div>
-                    <h3 class="small-title">ПЛАНИРОВАНИЕ</h3>
-                    <p class="description">Равным образом консультация с <br/> широким активом в значительной <br/> степени обуславливает.</p>
+                    <div class="feature__item feature__item--plan"></div>
+                    <h3 class="feature__title">ПЛАНИРОВАНИЕ</h3>
+                    <p>Равным образом консультация с <br/> широким активом в значительной <br/> степени обуславливает.</p>
                 </li>
                 <li>
-                    <div class="box-four"></div>
-                    <h3 class="small-title">СОВРЕМЕНЫЕ ТЕХНОЛОГИИ</h3>
-                    <p class="description">Значимость этих проблем настолько <br/> очевидна, что реализация плановых <br/> заданий.</p>
+                    <div class="feature__item feature__item--techno"></div>
+                    <h3 class="feature__title">СОВРЕМЕНЫЕ ТЕХНОЛОГИИ</h3>
+                    <p>Значимость этих проблем настолько <br/> очевидна, что реализация плановых <br/> заданий.</p>
                 </li>
             </ul>
             
