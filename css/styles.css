@@ -49,15 +49,15 @@ pointer-events: none;
 visibility: hidden;
 }
 
-.close{
+.btn-close__icon{
   fill: black;
   stroke: 1px;
   width: 30px;
   height: 30px;
   background-color: transparent; 
 }
-.close:hover{
-  fill: red;
+.btn-close__icon:hover{
+  fill: #2196F3;
 }
 .modal{
   position: absolute;
@@ -93,7 +93,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196F3;
 }
 
-.modal-title{
+.js-order-form__title{
 color: #212121;
 text-align: center;
 font-family: Roboto;
@@ -102,14 +102,15 @@ font-weight: bold;
 font-size: 20px;
 line-height: 1.15;
 letter-spacing: 0.03em;
+margin-bottom: 12px;
 }
 
-.form{
+.js-order-form{
   display: flex;
   flex-direction: column;
 }
 
-.form-label{
+.js-order-form__field{
 text-align: left;
 display: block;
 margin-bottom: 10px;
@@ -121,13 +122,13 @@ line-height: 1.16;
 color: #757575;
 }
 
-.form-wrap{
+.js-order-form__label{
   position: relative;
   display: block;
   margin-top: 4px;
 }
 
-.form-input{
+.js-order-form__input{
   width: 100%;
   height: 40px;
   padding: 0;
@@ -139,18 +140,18 @@ color: #757575;
   transform: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover,
-.form-input:focus{
+.js-order-form__input:hover,
+.js-order-form__input:focus{
   border-color: #188CE8;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.form-input:hover + .form-ic,
-.form-input:focus + .form-ic{
+.js-order-form__input:hover + .js-order-form__icon,
+.js-order-form__input:focus + .js-order-form__icon{
   fill: #2196F3;
 }
 
-.form-ic{
+.js-order-form__icon{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,7 +166,7 @@ color: #757575;
 
 
 
-.input-comment{
+.js-order-form__field--comment{
 text-align: left;
 display: block;
 font-family: Roboto;
@@ -175,7 +176,7 @@ font-size: 12px;
 line-height: 1.14;
 }
 
-.input-text{
+.js-order-form__comment{
   width: 100%;
   height: 120px;
   padding-top: 12px;
@@ -193,29 +194,29 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
 }
 
-.input-text:hover,
-.input-text:focus{
+.js-order-form__comment:hover,
+.js-order-form__comment:focus{
 border-color:#2196F3;
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.checkbox {
+.js-order-form__consent {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 30px;
   align-items: center;
 }
-.checkbox-input {
+.js-order-form__checkbox {
   appearance: none;
   position: absolute;
 }
 
-.checkbox-input:focus + .checkbox-icon{
+.js-order-form__checkbox:focus + .js-order-form__checkbox-icon{
   border-color: #188CE8;
 }
-.checkbox-input:checked + .checkbox-icon{
+.js-order-form__checkbox:checked + .js-order-form__checkbox-icon{
   border-color: #188CE8;
   border-radius: 2px;
   background-image: url('../images/Vector.svg');
@@ -223,7 +224,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #188CE8;
   background-origin: content-box;
 }
-.checkbox-icon {
+.js-order-form__checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -234,14 +235,14 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-agree {
+.js-order-form__consent-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-text);
   padding-left: 8.38px;
 }
-.checkbox-condit {
+.js-order-form__contract {
   text-decoration: underline;
   color: #188CE8;
   font-family: Roboto;
@@ -636,7 +637,7 @@ p{
  padding: 0;
 }
 
-.small-border{
+.team__description{
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -644,34 +645,8 @@ p{
  text-align: center;
  background-color: #ffffff;
 }
-.small-border-two{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
- padding-right: 32px;
- text-align: center;
- background-color: #ffffff;
-  
-}
-.small-border-three{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
- padding-right: 32px;
- text-align: center;
- background-color: #ffffff;
-  
-}
-.small-border-four{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
- padding-right: 32px;
- text-align: center;
- background-color: #ffffff;
-  
-}
-.feature{
+
+.feature-section{
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -777,16 +752,16 @@ padding-right: 15px;
 margin: 0 auto;
 padding-bottom: 94px;
 
-.container-pics-three{
+.work-section{
   padding-bottom: 94px;
 }
 }
 
 
-.main-pic{
+.work__main-pic{
 position: relative;
 }
-.small-pic{
+.work__small-pic{
 position: absolute;
 width: 370px;
 height: 70px;
@@ -798,7 +773,7 @@ align-items: center;
 justify-content: center;
 }
 
-.small-pic h6{
+.work__small-pic h6{
   text-align: center;
   font-family:Roboto;
   font-weight: 700;
@@ -814,7 +789,7 @@ padding: 0;
  
 }
 
-.card-set {
+.work {
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -822,8 +797,8 @@ padding: 0;
   flex-wrap: wrap;
 }
 
-.card-set >.item:not(:last-child) {
-margin-right: 30px;
+.work > .work__item:not(:last-child){
+  margin-right: 30px;
 }
 
 .container-team{
@@ -840,13 +815,13 @@ margin-right: 30px;
   padding-bottom: 94px ;
   background-color:#F5F4FA;
 }
-.my-team {
+.team {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.my-team > .team-items:not(:last-child) {
+.team > .team-item:not(:last-child) {
 margin-right: 30px;
 }
 
@@ -872,12 +847,12 @@ p{
 
 
 
-.insta-icon{
+.media-pic{
   width: 20px;
   height: 20px;
 }
 
-.change-insta {
+.media-link {
   
 width: 44px;
 height: 44px;
@@ -894,8 +869,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.change-insta:hover,
-.change-insta:focus {
+.media-link:hover,
+.media-link:focus {
   background-color:#2196F3;
   fill: white;
 }
@@ -923,7 +898,7 @@ footer{
   background-color: #2f303a;
 }
 }
-.footer-icons{
+.footer-social{
   display: flex;
   width: 206px;
   margin: 0;
@@ -933,7 +908,7 @@ footer{
   margin-right: auto;
 }
 
-.footer-media{
+.footer-social__list{
  display: flex;
  width: 206px;
  margin: 0;
@@ -944,7 +919,7 @@ footer{
  margin-right: auto;
 }
 
-.footer-subscription {
+.mailing-form {
   margin-left: 93px;
   font-weight: 700;
   font-size: 14px;
@@ -953,7 +928,7 @@ footer{
   text-transform: uppercase;
   color: #2f303a;
 }
-.subscription-text {
+.mailing-form__text {
   align-content: center;
   font-weight: bold;
   font-size: 14px;
@@ -962,14 +937,14 @@ footer{
   text-transform: uppercase;
   color: #fff;
 }
-.footer-form-sub {
+.js-mailing-form {
   display: flex;
   width: 570px;
   height: 86px;
   margin-top: 20px;
 }
 
-.sub-email {
+.js-mailing-form__input {
   width: 358px;
   height: 50px;
   background-color: #2F303A;
@@ -1019,7 +994,7 @@ footer{
   flex-direction: column;
   justify-content: space-between;
 }*/
-.last-icons{
+.footer-social__icon{
 width: 44px;
 height: 44px;
 background-color: rgba(255, 255, 255, 0.1);
@@ -1033,19 +1008,19 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.last-icons:hover,
-.last-icons:focus{
+.footer-social__icon:hover,
+.footer-social__icon:focus{
 background-color: #2196F3;
 }
 
-.media > .media-icon:not(:last-child){
+.media > .footer-social__item:not(:last-child){
   margin-right: 10px;
 }
 
 
 
 
-.footer-media {
+.footer-social__list {
   display: flex;
   width: 206px;
   margin: 0;
@@ -1055,59 +1030,39 @@ background-color: #2196F3;
   margin-left: auto;
   margin-right: auto;
 }
-.footer-media > .media-icon:not(:last-child){
+.footer-social__list > .footer-social__item:not(:last-child){
   margin-right: 10px;
 }
 
 
 
-/*.footer-media li{
-width: 44px;
-height: 44px;
-background-color: rgba(255, 255, 255, 0.1);;
-border-radius: 50px;
-justify-content: center;
-align-items: center;
-}
-
-.footer-media li:hover{
-  background-color:#2196F3
-}*/
-
-/*.footer-icons {
-display: flex;
-justify-content: space-between;
-margin: 0;
-padding: 0;
-}*/
-
-.company-divide:hover,
-.company-divide:focus {
+.clients__list:hover,
+.clients__list:focus {
   color: #2196F3;
 }
 
 
-.company-divide{
+.clients__list{
   display: flex;
   justify-content: space-between;
  margin: 0;
  padding: 0;
 }
-.company-divide >.company-li:not(:last-child){
+.clients__list >.clients__item:not(:last-child){
   margin-right: 30px;
 }
-.company-li{
+.clients__item{
   margin-left: auto;
  margin-right: auto;
 }
 
-.logo-icon{
+.clients__icon{
   width: 106px;
   height: 60px;
  
 }
 
-.change-company {
+.clients__link {
   fill: #AFB1B8;
 
   padding: 16px 32px;
@@ -1122,8 +1077,8 @@ padding: 0;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.change-company:hover,
-.change-company:focus{
+.clients__link:hover,
+.clients__link:focus{
   fill: #2196F3;
   border-color: #2196F3;
 }
@@ -1271,13 +1226,13 @@ h2 {
 }
 
 
-.last-container{
+.container .site-footer__container{
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-.last-container{
+.container .site-footer__container{
   display: flex;
 }
 .container-adress{
@@ -1288,7 +1243,7 @@ h2 {
   line-height: 1.5;
   color: white;
 }
-.last-container h6 {
+.container .site-footer__container h6 {
 font: Roboto;
 font-weight: 400px;
 list-style: none;
@@ -1297,7 +1252,7 @@ color: #ffffff;
 margin-bottom: 9px;
 }
 
-.footer-contacts {
+.contact-box {
   margin-right: 70px;
 }
 h6 {
@@ -1312,7 +1267,7 @@ h6 {
   
 }
 
-.footer-contacts p{
+.contact-box p{
 font: Roboto;
 font-weight: 400;
 font-style: normal;
@@ -1324,7 +1279,7 @@ margin-bottom: 9px;
 }
 
 
-.adress-divide {
+.footer-social__title {
   font-family: Roboto;
   font-weight: 700;
   font-style: normal;
@@ -1334,7 +1289,7 @@ margin-bottom: 9px;
   margin-bottom: 20px;
 }
 
-.website-name-footer {
+.site-footer__logo {
   color: #ffffff;
   font-family: Raleway;
   font-style: normal;
@@ -1344,7 +1299,7 @@ margin-bottom: 9px;
   margin-bottom: 20px;
   display: block;
 }
-.website-name-footer a {
+.site-footer__logo a {
   margin-bottom: 20px;
 }
 .container-pictures{
@@ -1485,7 +1440,7 @@ line-height: 1.56;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.team-items {
+.team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px  4px 4px;
 
