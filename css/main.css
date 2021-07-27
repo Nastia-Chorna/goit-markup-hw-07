@@ -365,12 +365,11 @@ span {
 
 .container {
   display: flex;
+  align-items: baseline;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  align-items: center;
-  border-bottom: 1px solid transparent;
 }
 
 .site-header__nav a {
@@ -884,16 +883,15 @@ footer {
   background-color: #2f303a;
 }
 
-.footer-social {
-  display: flex;
-  width: 206px;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/*.footer-social {
+    display: flex;
+    width: 206px;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
 .footer-social__list {
   display: flex;
   width: 206px;
@@ -948,7 +946,6 @@ footer {
 .js-mailing-form {
   display: flex;
   width: 570px;
-  height: 86px;
   margin-top: 20px;
 }
 
@@ -1045,7 +1042,7 @@ footer {
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.17px;
+  line-height: 1.17;
   color: white;
   margin-bottom: 20px;
 }

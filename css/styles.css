@@ -6,7 +6,6 @@
   --button-color: #ffffff;
   --p-color: #757575;
   --adress-color: #ffffff;
-
 }
 
 
@@ -909,12 +908,7 @@ footer{
   align-items: center;
 }
 .footer-social{
-
-width: 206px;
-margin: 0;
 padding: 0;
-margin-top: 20px;
-
 } 
 .footer-social__list {
 
@@ -991,7 +985,6 @@ background-color: #2196F3;
 .js-mailing-form {
   display: flex;
   width: 570px;
-  height: 86px;
   margin-top: 20px;
 }
 

@@ -1,3 +1,5 @@
+@import "./variables";
+
 .backdrop {
     visibility: inherit;
     position: fixed;
@@ -323,17 +325,16 @@ span {
     }
 }
 .header-contacts__item {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 .container {
-    display: flex;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    align-items: center;
-    border-bottom: 1px solid transparent;
+display: flex;
+align-items: baseline;
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
 }
 .site-header__nav {
     a {
@@ -798,7 +799,7 @@ footer {
     background-color: #2f303a;
 }
 
-.footer-social {
+/*.footer-social {
     display: flex;
     width: 206px;
     margin: 0;
@@ -806,7 +807,7 @@ footer {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 .footer-social__list {
     display: flex;
     width: 206px;
@@ -858,7 +859,6 @@ footer {
 .js-mailing-form {
     display: flex;
     width: 570px;
-    height: 86px;
     margin-top: 20px;
 }
 .js-mailing-form__input {
@@ -945,7 +945,7 @@ footer {
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
-    line-height: 1.17px;
+    line-height: 1.17;
     color: white;
     margin-bottom: 20px;
 }
