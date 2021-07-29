@@ -515,7 +515,6 @@ a {
 .feature__list {
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
 }
 .feature-section {
     padding-top: 94px;
@@ -548,7 +547,7 @@ p {
 margin-bottom: 10px;
 text-align: center;
 }
-.feature__item--details {
+.feature__item--thumb {
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -642,7 +641,7 @@ p {
 .work__main-pic {
     position: relative;
 }
-.work__small-pic {
+.work__overlay {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -667,7 +666,7 @@ p {
         padding: 0;
     }
 }
-.work {
+.work__list {
     padding: 0px;
     margin: 0px;
     list-style: none;

@@ -8,10 +8,11 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!--<link rel="stylesheet" href="./css/styles.css">-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 
@@ -22,8 +23,8 @@
       <!-- Логотип -->
         <a class="logo" href="./index.html"><span>Web</span>Studio</a>  
         <!-- Навигація -->
-        <nav class="site-header__nav" >
-            <ul class="site-nav">
+        <nav class="site-nav" >
+            <ul class="site-nav__list">
                 <li class="site-nav__item">
                     <a class="site-nav__link site-nav__link--current" style="color: #2196F3" href="./index.html">Студия</a>
                 </li>
@@ -45,7 +46,7 @@
             </svg> info@devstudio</a>
 
             </li>
-            <li class="our-contacts">
+            <li class="header-contacts__item">
                 
                 
                 <a class="header-contacts__link" href="tel:+380961111111"> <svg class="header-contacts__icon-phone">
@@ -67,7 +68,7 @@
         </div>
              
         
-    <button data-modal-open class="btn-hero" type="button">Заказать услугу</button>
+    <button data-modal-open class="hero__btn" type="button">Заказать услугу</button>
  
     <!-- Модальне вікно -->
 
@@ -138,7 +139,7 @@
 
             <ul class="feature__list">
                 <li>
-                    <div class="feature__item feature__item--details"></div>
+                    <div class="feature__item feature__item--thumb"></div>
                     <h3 class="feature__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                     <p>Идейные соображения, а также <br/> начало повседневной работы по <br/> формированию позиции.</p>
                 </li>
@@ -168,14 +169,14 @@
             
     <h2>Чем мы занимаемся</h2>
              
-    <ul class="work">
+    <ul class="work__list">
         <li class="work__item">
 
             <article>
                 <div class="work__main-pic">
                 <img src="./images/pic1.jpg" alt="pic1" width="370" />
                 
-                <div class="work__small-pic">
+                <div class="work__overlay">
                     <h6 class="work__title">Десктопные приложения</h6>
 
                 </div>
@@ -189,7 +190,7 @@
                     <article>
                         <div class="work__main-pic">
                     <img src="./images/pic2.jpg" alt="pic2" width="370" />
-                    <div class="work__small-pic">
+                    <div class="work__overlay">
                         <h6 class="work__title">Мобильные приложения</h6>
     
                     </div>
@@ -204,7 +205,7 @@
                     <article class="three-pictures">
                         <div class="work__main-pic">
                     <img src="./images/pic3.jpg" alt="pic3" width="370" />
-                    <div class="work__small-pic">
+                    <div class="work__overlay">
                         <h6 class="work__title">Дизайнерские решения</h6>
     
                     </div>
